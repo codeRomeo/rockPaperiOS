@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521C7CBA1D66A30400202944 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 521C7CB91D66A30400202944 /* BG.png */; };
 		52F7F5461D62B7AC00DBB76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F5451D62B7AC00DBB76E /* AppDelegate.swift */; };
 		52F7F5481D62B7AC00DBB76E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F5471D62B7AC00DBB76E /* ViewController.swift */; };
 		52F7F54B1D62B7AC00DBB76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7F5491D62B7AC00DBB76E /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		52F7F5501D62B7AC00DBB76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7F54E1D62B7AC00DBB76E /* LaunchScreen.storyboard */; };
 		52F7F55B1D62B7AC00DBB76E /* rockPaperiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F55A1D62B7AC00DBB76E /* rockPaperiOSTests.swift */; };
 		52F7F5661D62B7AC00DBB76E /* rockPaperiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F5651D62B7AC00DBB76E /* rockPaperiOSUITests.swift */; };
+		52F7F5741D62B96300DBB76E /* appModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F5731D62B96300DBB76E /* appModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521C7CB91D66A30400202944 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../Desktop/BG.png; sourceTree = "<group>"; };
 		52F7F5421D62B7AC00DBB76E /* rockPaperiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rockPaperiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7F5451D62B7AC00DBB76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F7F5471D62B7AC00DBB76E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		52F7F5611D62B7AC00DBB76E /* rockPaperiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rockPaperiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7F5651D62B7AC00DBB76E /* rockPaperiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rockPaperiOSUITests.swift; sourceTree = "<group>"; };
 		52F7F5671D62B7AC00DBB76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F7F5731D62B96300DBB76E /* appModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = appModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 				52F7F5471D62B7AC00DBB76E /* ViewController.swift */,
 				52F7F5491D62B7AC00DBB76E /* Main.storyboard */,
 				52F7F54C1D62B7AC00DBB76E /* Assets.xcassets */,
+				521C7CB91D66A30400202944 /* BG.png */,
 				52F7F54E1D62B7AC00DBB76E /* LaunchScreen.storyboard */,
 				52F7F5511D62B7AC00DBB76E /* Info.plist */,
+				52F7F5731D62B96300DBB76E /* appModel.swift */,
 			);
 			path = rockPaperiOS;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			files = (
 				52F7F5501D62B7AC00DBB76E /* LaunchScreen.storyboard in Resources */,
 				52F7F54D1D62B7AC00DBB76E /* Assets.xcassets in Resources */,
+				521C7CBA1D66A30400202944 /* BG.png in Resources */,
 				52F7F54B1D62B7AC00DBB76E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F7F5741D62B96300DBB76E /* appModel.swift in Sources */,
 				52F7F5481D62B7AC00DBB76E /* ViewController.swift in Sources */,
 				52F7F5461D62B7AC00DBB76E /* AppDelegate.swift in Sources */,
 			);
@@ -415,10 +423,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rockPaperiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeRomeo.rockPaperiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,10 +437,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rockPaperiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeRomeo.rockPaperiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -503,6 +515,7 @@
 				52F7F56C1D62B7AC00DBB76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F7F56D1D62B7AC00DBB76E /* Build configuration list for PBXNativeTarget "rockPaperiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +524,7 @@
 				52F7F56F1D62B7AC00DBB76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52F7F5701D62B7AC00DBB76E /* Build configuration list for PBXNativeTarget "rockPaperiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +533,7 @@
 				52F7F5721D62B7AC00DBB76E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

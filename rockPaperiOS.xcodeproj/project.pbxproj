@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		521C7CBA1D66A30400202944 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 521C7CB91D66A30400202944 /* BG.png */; };
+		52EA85A31D6A0B6900B6CCD5 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 52EA85A21D6A0B6900B6CCD5 /* BG.png */; };
 		52F7F5461D62B7AC00DBB76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F5451D62B7AC00DBB76E /* AppDelegate.swift */; };
 		52F7F5481D62B7AC00DBB76E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7F5471D62B7AC00DBB76E /* ViewController.swift */; };
 		52F7F54B1D62B7AC00DBB76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7F5491D62B7AC00DBB76E /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		521C7CB91D66A30400202944 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = ../../../../Desktop/BG.png; sourceTree = "<group>"; };
+		52EA85A21D6A0B6900B6CCD5 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG.png; path = Assets.xcassets/BG.png; sourceTree = "<group>"; };
 		52F7F5421D62B7AC00DBB76E /* rockPaperiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rockPaperiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7F5451D62B7AC00DBB76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F7F5471D62B7AC00DBB76E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				52F7F5471D62B7AC00DBB76E /* ViewController.swift */,
 				52F7F5491D62B7AC00DBB76E /* Main.storyboard */,
 				52F7F54C1D62B7AC00DBB76E /* Assets.xcassets */,
-				521C7CB91D66A30400202944 /* BG.png */,
+				52EA85A21D6A0B6900B6CCD5 /* BG.png */,
 				52F7F54E1D62B7AC00DBB76E /* LaunchScreen.storyboard */,
 				52F7F5511D62B7AC00DBB76E /* Info.plist */,
 				52F7F5731D62B96300DBB76E /* appModel.swift */,
@@ -244,9 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EA85A31D6A0B6900B6CCD5 /* BG.png in Resources */,
 				52F7F5501D62B7AC00DBB76E /* LaunchScreen.storyboard in Resources */,
 				52F7F54D1D62B7AC00DBB76E /* Assets.xcassets in Resources */,
-				521C7CBA1D66A30400202944 /* BG.png in Resources */,
 				52F7F54B1D62B7AC00DBB76E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

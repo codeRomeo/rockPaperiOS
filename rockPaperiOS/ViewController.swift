@@ -25,17 +25,17 @@ class ViewController: UIViewController {
  
     
      @IBAction func rockPressed(_ sender: AnyObject) {
-        updateUI(choice: "rock")    // call this method to refresh View after game play
+        updateUI(choice: "Rock")    // call this method to refresh View after game play
      }
     
     @IBAction func paperPressed(_ sender: AnyObject) {
         
-        updateUI(choice: "paper")   // call this method to refresh View after game play
+        updateUI(choice: "Paper")   // call this method to refresh View after game play
     }
     
     @IBAction func ScissorsPressed(_ sender: AnyObject) {
         
-        updateUI(choice: "scissors")   // call this method to refresh View after game play
+        updateUI(choice: "Scissors")   // call this method to refresh View after game play
     }
     
     
@@ -53,9 +53,9 @@ class ViewController: UIViewController {
         //  This method is called when user selects a choice. user choice string is updated with selection and calls the appModel class instance.
         //  modelInstance() return game play result and scores. view is updated
         
-        modelInstance.userChoice = choice                                 //  set user choice from user input
+        modelInstance.userChoice = choice                        //  set user choice from user input
         resultsDisplay.text  = modelInstance.play()              //  update result field with game play result (game play is trigerred once)
- 
+        // TODO: sound effects here //
         siriChoice.text = modelInstance.computerChoice           //  update user choice text field
         meChoice.text = modelInstance.userChoice                 //  update computer choice text field
         siriScore.text = "\(modelInstance.computerScore)"        //  update computer score

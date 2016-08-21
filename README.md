@@ -1,9 +1,10 @@
-# Rock Paper Scissors iOS
+# Rock Paper Scissors iOS app
 
-This game is ported from a MacOS (OSX) project in Swift language. 
+
+This game is ported from my [macOS (OSX)](https://github.com/codeRomeo/RockPaperScissorsOSX) project also in Swift language. 
 **The main goal of the project is to see if the "model" source code from the OSX project can be ported without any change 
 into iOS.** Also, learn about auto layout and  version control. 
-
+ 
 **This is the primary interface. Its a single view, single screen application.**  
 (Actual screenshot from an iphone 6 plus !)
 
@@ -18,3 +19,4 @@ Siri keeps score....
 
 ![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-ss1.png)
 
+Update 8/21: The Model source code was copied as is from the OSX project and compiled with no errors on first go. Theory works!

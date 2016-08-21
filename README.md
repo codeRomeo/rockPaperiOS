@@ -1,6 +1,6 @@
 # Rock Paper Scissors iOS
 
-This game ported from a MacOS (OSX) project in Swift language. 
+This game is ported from a MacOS (OSX) project in Swift language. 
 **The main goal of the project is to see if the "model" source code from the OSX project can be ported without any change 
 into iOS.** Also, learn about auto layout and  version control. 
 

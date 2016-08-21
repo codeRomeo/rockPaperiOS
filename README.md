@@ -4,20 +4,17 @@ This game is ported from a MacOS (OSX) project in Swift language.
 **The main goal of the project is to see if the "model" source code from the OSX project can be ported without any change 
 into iOS.** Also, learn about auto layout and  version control. 
 
-**This is the primary interface. Its a single view, single screen application .**
+**This is the primary interface. Its a single view, single screen application.**  
+(Actual screenshot from an iphone 6 plus !)
 
+![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-iPhone6.png)
 
 ### What it does:
 Plays a game of rock-paper-scissors against Siri. Hit a choice of rock, paper or scissors and see if you win!
 
 Siri keeps score....
 ***
-### Init Screen:  
+### Init Screen: 
 
-
-### Main view:
-
-  
-
-
+![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-ss1.png)
 

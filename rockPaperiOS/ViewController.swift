@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
     
     let modelInstance = appModel()   //  initialize instance of Model object
     
+    let systemSound: [SystemSoundID] = [1000, 1022, 1006, 1003]  // array of iOS system sound IDs
+    
+    // note: "SystemSoundID" is a special datatype from AVFoundation
     // various properites of ViewController (Interface builder)
     
     @IBOutlet weak var siriChoice: UILabel!
@@ -22,10 +26,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var siriScore: UILabel!
     
     
- 
-    
-     @IBAction func rockPressed(_ sender: AnyObject) {
+    @IBAction func rockPressed(_ sender: AnyObject) {
+        
         updateUI(choice: "Rock")    // call this method to refresh View after game play
+        
      }
     
     @IBAction func paperPressed(_ sender: AnyObject) {
@@ -43,7 +47,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
         resultsDisplay.text = "Pick your choice to play"   // set initial message and initialize view when app is loaded
         
     }
@@ -52,23 +55,22 @@ class ViewController: UIViewController {
         
         //  This method is called when user selects a choice. user choice string is updated with selection and calls the appModel class instance.
         //  modelInstance() return game play result and scores. view is updated
-        
+    
         modelInstance.userChoice = choice                        //  set user choice from user input
         resultsDisplay.text  = modelInstance.play()              //  update result field with game play result (game play is trigerred once)
-        // TODO: sound effects here //
+        let sndIndex = modelInstance.outcome                     //  figure out what sound to play by outcome dict lookup
+        AudioServicesPlaySystemSound (systemSound[sndIndex])  //  play sound
         siriChoice.text = modelInstance.computerChoice           //  update user choice text field
         meChoice.text = modelInstance.userChoice                 //  update computer choice text field
         siriScore.text = "\(modelInstance.computerScore)"        //  update computer score
         meScore.text = "\(modelInstance.userScore)"              //  update user score
-        
-        
+    
     }
  
    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
         
     }
 

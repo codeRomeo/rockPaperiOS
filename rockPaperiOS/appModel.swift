@@ -45,31 +45,20 @@ class appModel {
     var computerScore = 0       //  Int variable to hold computer score
     var outcome:Int = 3
     
-    
-    
-    
     func play() -> String {
         
-        var result = ""  // initialize a result string variable
-        
+        var result = ""                                             // initialize a result string variable
         computerChoice = randomizeRPS()                             // randomize a choice string for computer
-        
         result = compare(userChoice, compChoice: computerChoice)    // ask for user input and compare; store in result variable ; update scores
         
         switch result {
             
-        case "User":        userScore+=1; outcome = 1
+            case "User"     :   userScore+=1; outcome = 1
+            case "Computer" :   computerScore+=1; outcome = 2
+            case "None"     :   outcome = 3; break
+            default         :   outcome = 3; break
             
-        case "Computer":    computerScore+=1; outcome = 2
-            
-        case "None": outcome = 3; break
-            
-        default: outcome = 3; break
-            
-        }
-        
-        // print(computerScore, userScore)   // output to console scores (for testing; this line will not be in production
-        
+            }
         return uiMessage     // return winner
     }
     
@@ -83,16 +72,15 @@ class appModel {
         
         switch usrChoice {
             
-        case compChoice:  winner = "None" ;  uiMessage = "...It's a tie 😐"    // quick test to eliminate a tie scenario
+            case compChoice:  winner = "None" ;  uiMessage = "...It's a tie 😐"    // quick test to eliminate a tie scenario
             
-            
-        case "Rock":        if (compChoice == "Scissors" )  { winner = "User"; uiMessage = "Rock breaks Scissors! 😂"  }   else    {   winner = "Computer"; uiMessage = "Paper covers Rock! ☹️"   }  // check two scenarios
-            
-        case "Paper":       if (compChoice == "Rock" )  { winner = "User"; uiMessage = "Paper wraps Rock! 😀"  }   else    {   winner = "Computer"; uiMessage = "Scissors cuts Paper! 😰" } // check two scenarios
-            
-        case "Scissors":    if (compChoice == "Rock" )  { winner = "Computer"; uiMessage = "Rock dunces Scissors! 😣"  }   else    {   winner = "User"; uiMessage = "Scissors rips Paper! 😎" } // check two scenarios
-            
-        default:            winner = "None" ; uiMessage = "...It's a tie 😐"
+            case "Rock":        if (compChoice == "Scissors" )  { winner = "User"; uiMessage = "Rock breaks Scissors! 😂"  }   else    {   winner = "Computer"; uiMessage = "Paper covers Rock! 😟"   }  // check two scenarios
+                
+            case "Paper":       if (compChoice == "Rock" )  { winner = "User"; uiMessage = "Paper wraps Rock! 😀"  }   else    {   winner = "Computer"; uiMessage = "Scissors cuts Paper! 😰" } // check two scenarios
+                
+            case "Scissors":    if (compChoice == "Rock" )  { winner = "Computer"; uiMessage = "Rock dunces Scissors! 😣"  }   else    {   winner = "User"; uiMessage = "Scissors rips Paper! 😎" } // check two scenarios
+                
+            default:            winner = "None" ; uiMessage = "...It's a tie 😐"
             
         }
         
@@ -112,11 +100,11 @@ class appModel {
         
         switch randomNum {   // return a selection based on random number
             
-        case 1: return "Rock"
-            
-        case 2: return "Paper"
-            
-        case 3: return "Scissors"
+            case 1: return "Rock"
+                
+            case 2: return "Paper"
+                
+            case 3: return "Scissors"
             
         default : return ""
             

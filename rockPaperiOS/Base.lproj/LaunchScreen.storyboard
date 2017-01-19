@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,16 +16,40 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rps-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="fg0-7I-2cj">
-                                <frame key="frameInset" minX="113" minY="112" width="148" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rps-icon-c" translatesAutoresizingMaskIntoConstraints="NO" id="fg0-7I-2cj">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="148" id="0iL-Ig-sHm"/>
+                                    <constraint firstAttribute="width" secondItem="fg0-7I-2cj" secondAttribute="height" multiplier="148:155" id="QZz-7A-eu6"/>
+                                    <constraint firstAttribute="height" constant="155" id="iSv-s2-EM7"/>
+                                    <constraint firstAttribute="width" constant="148" id="tYW-cV-N2i"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oW-tI-5bf">
-                                <frame key="frameInset" minX="16" minY="275" width="343" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by codeRomeo (c) 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcT-s0-nNC">
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" keyboardDismissMode="interactive" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uQ-6B-qM1">
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.34509803921568627" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Plays a game of 
+Rock Paper or Scissors
+ against Siri.  
+
+Pick your choice and see if you win!
+
+Siri keeps score....</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oW-tI-5bf">
                                 <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -43,34 +69,20 @@
                                 <color key="shadowColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <size key="shadowOffset" width="2" height="3"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by codeRomeo (c) 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcT-s0-nNC">
-                                <frame key="frameInset" minX="75" minY="340" width="225" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" keyboardDismissMode="interactive" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uQ-6B-qM1">
-                                <frame key="frameInset" minX="67" minY="379" width="240" height="183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.066666666666666666" green="0.34509803921568627" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Plays a game of 
-Rock Paper or Scissors
- against Siri.  
-
-Pick your choice and see if you win!
-
-Siri keeps score....</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0016068432683810109" green="0.34749554370629171" blue="0.95448717948717954" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LcT-s0-nNC" firstAttribute="centerX" secondItem="6uQ-6B-qM1" secondAttribute="centerX" id="0kK-Ky-soK"/>
+                            <constraint firstItem="3oW-tI-5bf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0wa-rf-956"/>
+                            <constraint firstItem="fg0-7I-2cj" firstAttribute="centerX" secondItem="3oW-tI-5bf" secondAttribute="centerX" id="2vi-iw-2dF"/>
+                            <constraint firstItem="3oW-tI-5bf" firstAttribute="top" secondItem="fg0-7I-2cj" secondAttribute="bottom" constant="8" symbolic="YES" id="5mf-Q7-0pt"/>
+                            <constraint firstItem="3oW-tI-5bf" firstAttribute="centerX" secondItem="LcT-s0-nNC" secondAttribute="centerX" id="GPf-ye-UMc"/>
+                            <constraint firstItem="fg0-7I-2cj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="162" id="J6R-rm-Svp"/>
+                            <constraint firstItem="6uQ-6B-qM1" firstAttribute="top" secondItem="LcT-s0-nNC" secondAttribute="bottom" constant="17" id="RbY-iw-Jkb"/>
+                            <constraint firstItem="6uQ-6B-qM1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="67" id="Xei-4x-Ycw"/>
+                            <constraint firstItem="LcT-s0-nNC" firstAttribute="top" secondItem="3oW-tI-5bf" secondAttribute="bottom" constant="17" id="YO9-w8-t7C"/>
+                            <constraint firstItem="fg0-7I-2cj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aCX-KT-BZS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,6 +91,6 @@ Siri keeps score....</string>
         </scene>
     </scenes>
     <resources>
-        <image name="rps-icon.png" width="512" height="512"/>
+        <image name="rps-icon-c" width="460" height="459"/>
     </resources>
 </document>

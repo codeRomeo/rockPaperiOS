@@ -8,7 +8,7 @@ into iOS.** Also, learn about auto layout and  version control.
 **This is the primary interface. Its a single view, single screen application.**  
 (Actual screenshot from an iphone 6 plus !)
 
-![alt tag](rockPaperiOS/RPS_iOS-iPhone6.png)
+![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-iPhone6.png)
 
 ### What it does:
 Plays a game of rock-paper-scissors against Siri. Hit a choice of rock, paper or scissors and see if you win!
@@ -17,8 +17,10 @@ Siri keeps score....
 ***
 ### Init Screen: 
 
-![alt tag](rockPaperiOS/RPS_iOS-iPhone6.png)
+![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-iPhone6.png)
 
 Update 8/21: The Model source code was copied as is from the OSX project and compiled with no errors on first go. Theory works!
-Update 2018: Updated to swift 4 & Xcode 9 
+
+
+Update 2018: Convert to Swift 4 & Xcode 9 
 everything still works :-)

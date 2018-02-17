@@ -17,6 +17,7 @@ Siri keeps score....
 ***
 ### Init Screen: 
 
-![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-ss1.png)
+![alt tag](https://github.com/codeRomeo/rockPaperiOS/blob/master/RPS_iOS-iPhone6.png)
 
 Update 8/21: The Model source code was copied as is from the OSX project and compiled with no errors on first go. Theory works!
+Update 2018: Updated to swift 4 & Xcode 9 ;  everything still works :-) ;

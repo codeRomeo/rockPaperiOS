@@ -4,7 +4,7 @@
 //
 //  Created by Tariq on 8/15/16.
 //  Copyright © 2016 Tariq. All rights reserved.
-//
+//  update to swift 4 (2018)
 
 import UIKit
 import AVFoundation
